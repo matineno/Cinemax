@@ -1,8 +1,10 @@
 @charset "utf-8";
 :root {
-  --background-color: rgb(16, 20, 32);
+  --background-color-one: rgb(16, 20, 32);
+  --background-color-two: rgb(235, 237, 243);
   --input-background-color: rgb(255 255 255 / 0.05);
-  --font-color: rgb(240, 235, 235);
+  --font-color-one: rgb(240, 235, 235);
+  --font-color-two: rgb(16, 20, 32);
   --action-button-color: rgb(60, 87, 255);
 }
 
@@ -16,7 +18,7 @@
 
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-one);
   color: var(--font-color);
 }
 
@@ -68,6 +70,7 @@ body {
 
 header{
     margin-top: 100px;
+    color: var(--font-color-one)
 }
 
 
@@ -79,13 +82,17 @@ p {
     text-align: center;
 }
 
+form {
+  position: relative;
+}
+
 input[type=text] {
     height: 30px;
     width: 200px;
     padding: 0 15px;
     border-radius: 5px;
     background-color: var(--input-background-color);
-    color: var(--font-color);
+    color: var(--font-color-one);
 }
 
 input + input {
@@ -98,10 +105,22 @@ input[type=submit] {
     padding: 0 15px;
     border-radius: 5px;
     background-color: var(--action-button-color);
-    color: var(--font-color);
+    color: var(--font-color-one);
     font-size: 12px;
     font-weight: 600;
 }
+
+ul {
+  position: absolute;
+  background-color: var(--background-color-two);
+  color: var(--font-color-two);
+  width: 200px;
+  border-radius: 2px;
+}
+
+li (
+
+)
 
 .output p {
     font-size: 20px;
