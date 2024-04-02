@@ -1,7 +1,7 @@
 'use strict';
 
 /* Importing modules */
-import moviesData from './moviesData.js';
+import moviesData from './movies.js';
 import { select, listen, create } from './utils.js';
 
 /* Constant elements */
